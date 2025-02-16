@@ -18,11 +18,16 @@ header .header .header-box {
 header .header .header-box .social-media{
     margin-right: 7px;
 }
-header .header .header-box .social-media a{
+header .header .header-box .social-media a i{
  color: rgb(108, 104, 104); 
  padding-right:5px ;
- font-size: 14px;  
+ font-size: 17px;  
  padding-left: 4px; 
+ padding-left: 10px;
+ padding-top: 5px;
+}
+header .header .header-box .social-media a i:hover{
+    color: rgb(0, 73, 182);
 }
 header .header .header-box .short-contct{
     display: flex;
@@ -37,7 +42,11 @@ header .header .header-box .short-contct ul li a{
     padding-right: 14px;
     text-decoration: none;
     color: rgb(123, 119, 119);
+    font-size: 15px;
 
+}
+header .header .header-box .short-contct ul li a:hover{
+    color: rgb(0, 38, 255);
 }
 header .header .main-header{
     background-color: rgba(235, 235, 235, 0.387);
@@ -51,6 +60,7 @@ header .header .main-header{
 header .header .main-header .header-logo a img{
     width: 100px;
     padding-top: 10px;
+    line-height: 40px;
 }
 header .header .main-header .navbar{
     display: flex;
@@ -66,11 +76,15 @@ header .header .main-header .navbar ul{
 header .header .main-header .navbar ul li{
     padding-right: 40px;
     margin-top: 20px;
+    font-size: 14px;
 }
 header .header .main-header .navbar ul li a{
     text-decoration: none;
     color: gray;
     font-weight: bold;
+}
+header .header .main-header .navbar ul li a:hover{
+    color: black;
 }
 header .header .main-header .aponment{
     top: 0;
@@ -81,11 +95,18 @@ header .header .main-header .aponment{
 header .header .main-header .aponment button{
     background-color: rgb(0, 151, 251);
     outline: none;
-    border: 2px solid rgb(2, 123, 244);
+    border: 1px solid rgb(2, 123, 244);
     padding: 10px 20px;
     color: white;
     border-radius: 5px;
     margin-left: 100px;
+    font-size: 15px;
+    transition:all 0.5s ease-out ;
+}
+header .header .main-header .aponment button:hover{
+
+    background-color: white;
+    color: rgb(0, 38, 255);
 }
 .intro {
     display: flex;
@@ -138,6 +159,10 @@ header .header .main-header .aponment button{
     color: honeydew;
     font-size: 20px;
 }
+.intro .introimg button:hover{
+    background-color: white;
+    color: rgb(0, 98, 255);
+}
 .service-area{
     width: 100%;
     background-color: rgb(23, 124, 247);
@@ -180,7 +205,13 @@ header .header .main-header .aponment button{
     border: 1px solid white;
     margin-bottom: 30px;
     padding: 7px;
+    border-radius: 10px;
 
+}
+.service-area .service-container a:hover{
+    background-color: white;
+    border: 2px solid rgb(76, 102, 252);
+    color: rgb(0, 94, 255);
 }
 .wellcome-area{
     margin-left: 100px;
@@ -238,12 +269,16 @@ header .header .main-header .aponment button{
     margin-top: 20px;
     background-color: rgb(255, 255, 255);
    outline: none;
-   border: 2px solid rgb(3, 100, 197);
+   border: 1px solid rgb(3, 100, 197);
    border-radius: 5px; 
    color: rgb(0, 128, 255);
    font-weight: bold;
 }
-
+.wellcome-area .wellcome-container .wellcome-text button:hover{
+    background-color: rgb(0, 94, 255);
+    color: white;
+    border: 1px rgb(2, 42, 122) solid;
+}
 .our-department-area{
     background-color: rgba(213, 212, 212, 0.685);
     height: 1000px;
@@ -295,6 +330,10 @@ header .header .main-header .aponment button{
     height: 200px;
     width: 300px;
     border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.our-department-area .department-container .all-care .single-department .single-pic img:hover{
+    transform:scale(1.1) ;
 }
 .our-department-area .department-container .all-care .single-department .single-text h2{
     color: rgba(0, 0, 0, 0.607);
@@ -326,6 +365,9 @@ header .header .main-header .aponment button{
     display: inline-block;
     padding: 5px;
     border-radius: 10px;
+}
+.our-department-area .department-container .all-care .single-department .single-text h3:hover{
+    text-decoration: underline;
 }
 .active{
     width: 100%;
@@ -361,7 +403,7 @@ header .header .main-header .aponment button{
     border-radius: 10px;
 }
 .active  .active-container h4{
-    font-size: 25px;
+    font-size: 15px;
     margin: 15px;
     margin-top: 60px;
     font-weight:bolder;
@@ -382,6 +424,10 @@ header .header .main-header .aponment button{
     display: flex;
     padding: 25px;
     background-color: rgb(222, 234, 234);
+    cursor: pointer;
+}
+.quality .quality-head h3:hover{
+    color: black;
 }
 .quality .quality-head h3{
     font-size: 25px;
@@ -413,6 +459,7 @@ header .header .main-header .aponment button{
     font-weight:100;
     margin-bottom: 10px;
 }
+
 .quality .quality-container .logo-text .quality-text h2{
     padding: 20px 0;
     color: rgb(0, 102, 255);
@@ -459,20 +506,29 @@ header .header .main-header .aponment button{
     width: 100%;
     padding: 30px;
     padding-bottom: 50px;
+    justify-content: space-around;
 }
 .experts .ex-doctors .doctor{
     padding: 15px;
     padding-top: 30px;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    
+    cursor: alias;
 }
+.experts .ex-doctors .doctor:hover{
+    background-color: rgb(37, 163, 247);
+}
+
 .experts .ex-doctors .doctor img{
-    width: 250px;
+    width: 220px;
     padding-bottom: 8px;
+    transition: transform 0.3s ease-out;
+}
+.experts .ex-doctors .doctor img:hover{
+    transform: scale(1.1);
 }
 .experts .ex-doctors .doctor h3{
-    color: rgba(0, 151, 252, 0.732);
+    color: rgba(5, 5, 5, 0.732);
     padding-bottom: 10px;
     font-size: 25px;
     font-family: 'Courier New', Courier, monospace;
@@ -533,9 +589,14 @@ header .header .main-header .aponment button{
     font-size: 17px;
     margin: 15px;
     margin-top: 10px;
-    border: 2px solid;
+    border: 1px solid;
     padding: 8px;
     border-radius: 50px;
+    cursor: alias;
+}
+.dubble-part h3:hover{
+    background-color: rgb(0, 94, 255);
+    box-shadow: 1px 1px 2px black;
 }
 footer{
     width: 100%;
@@ -565,12 +626,16 @@ footer .footr .fs-st-ftr .fs-st-ftr-icon{
 }
 footer .footr .fs-st-ftr .fs-st-ftr-icon i{
     background-color: rgb(110, 109, 109);
-    color: white;
+    color: rgb(168, 166, 166);
     padding: 18px;
     margin: 10px;
     border-radius: 10px;
     cursor: pointer;
     margin-left: 0;
+}
+footer .footr .fs-st-ftr .fs-st-ftr-icon i:hover{
+    color: white;
+    background-color: rgb(80, 79, 79);
 }
 footer .footr .ftr{
     margin-left: 50px;
@@ -585,6 +650,7 @@ footer .footr .ftr  ul{
 footer .footr .ftr h2 {
     padding-bottom: 50px;
     color: white;
+    font-size: 20px;
 }
 footer .footr .ftr ul li{
     padding-bottom: 10px;
@@ -593,6 +659,10 @@ footer .footr .ftr ul li{
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     cursor: pointer;
+    font-size:16px;
+}
+footer .footr .ftr ul li:hover{
+    color: white;
 }
 .top-footer{
     width: 100%;
